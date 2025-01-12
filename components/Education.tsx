@@ -22,12 +22,12 @@ export default function Education() {
   
     return (
       <section id="education" className="py-20 bg-gray-100">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mt-5">
           <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">Education</h2>
           <div className="space-y-6 max-w-4xl mx-auto">
             {education.map((edu, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                <h3 className="text-xl font-semibold text-primary mb-2">{edu.institution}</h3>
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
+                <h3 className="text-black text-xl font-semibold text-primary mb-2">{edu.institution}</h3>
                 <p className="text-gray-700 font-medium">{edu.degree}</p>
                 <p className="text-gray-600">{edu.period}</p>
                 <p className="text-gray-600">{edu.grade}</p>

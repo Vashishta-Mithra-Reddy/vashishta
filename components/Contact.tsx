@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
       <section id="contact" className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mt-5">
           <h2 className="text-3xl font-semibold mb-6 text-center">Contact</h2>
           <div className="text-center space-y-4">
             <p>Email: <a href="mailto:vashishtamithrareddy@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors duration-300">vashishtamithrareddy@gmail.com</a></p>

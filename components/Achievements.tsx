@@ -8,9 +8,9 @@ export default function Achievements() {
   
     return (
       <section id="achievements" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mt-5">
           <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">Achievements</h2>
-          <ul className="space-y-4 max-w-2xl mx-auto">
+          <ul className="space-y-4 max-w-2xl mx-auto cursor-pointer">
             {achievements.map((achievement, index) => (
               <li key={index} className="flex items-start bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
                 <span className="text-primary mr-2 text-xl">•</span>
