@@ -15,7 +15,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = ['About', 'Skills', 'Projects', 'Education', 'Achievements', 'Contact']
+  const navItems = ['About', 'Skills', 'Projects', 'Achievements', 'Contact']
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -26,15 +26,16 @@ export default function Header() {
   }
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 px-1 sm:px-6 ${isScrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
+    // <header className={`fixed w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 ${isScrolled ? 'bg-white border-b-2 border-gray-300' : 'bg-transparent'} `}>
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 bg-white border-b-2 border-gray-300' : 'bg-transparent `}>
       <nav className="container mx-auto px-5 py-6">
-        <div className="flex justify-end sm:justify-center items-center">
+        <div className="flex justify-end md:justify-center items-center">
           <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <Link 
                 key={item}
                 href={`#${item.toLowerCase()}`} 
-                className="nav-link relative group text-lg font-semibold tracking-wide text-white"
+                className={`nav-link relative group text-lg font-semibold tracking-wide text-black`}
               >
                 {item}
                 <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
@@ -66,7 +67,7 @@ export default function Header() {
               <li key={item}>
                 <Link 
                   href={`#${item.toLowerCase()}`} 
-                  className="block text-white text-lg font-semibold tracking-wide hover:text-primary transition-colors duration-300"
+                  className="block text-white text-lg font-semibold tracking-wide hover:text-primary transition-colors duration-300 text-end"
                   onClick={closeMenu}
                 >
                   {item}

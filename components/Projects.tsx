@@ -49,12 +49,12 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-4 mt-5 max-w-6xl ">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">Projects</h2>
+        <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 cursor-pointer">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-100 px-12 py-10 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="flex items-center mb-6">
                 {project.logo && (

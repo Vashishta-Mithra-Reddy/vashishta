@@ -21,9 +21,9 @@ export default function Education() {
     ]
   
     return (
-      <section id="education" className="py-20 bg-gray-100">
+      <section id="education" className="py-20 bg-white">
         <div className="container mx-auto px-4 mt-5">
-          <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">Education</h2>
+          <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">Education</h2>
           <div className="space-y-6 max-w-4xl mx-auto">
             {education.map((edu, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
