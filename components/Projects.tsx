@@ -3,6 +3,13 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
+      title: "Vikraya",
+      description: "Blockchain-based crop auction system enabling farmers to sell their produce directly to consumers with full transparency and no scope for fraud. Built with Next.js, Tailwind CSS, Supabase, Web3.js, and Razorpay.",
+      technologies: ["Next.js", "Tailwind CSS", "Supabase", "Web3.js", "Razorpay"],
+      link: "https://vikraya.vercel.app",
+      logo: "/logos/vikraya.png" // Placeholder for logo path
+    },
+    {
       title: "Kāryakramah",
       description: "SaaS platform enabling event planning with features to book banquet halls and personnel. Built with Next.js, Node.js, Tailwind CSS, Clerk, MongoDB, and Razorpay. Hosted on Vercel.",
       technologies: ["Next.js", "Node.js", "Tailwind CSS", "Clerk", "MongoDB", "Razorpay"],
@@ -15,13 +22,6 @@ export default function Projects() {
       technologies: ["Arduino", "Node MCU", "IoT Sensors", "Thingspeak", "IFTTT"],
       link: "https://github.com/Vashishta-Mithra-Reddy/Agro_T",
       logo: "/logos/krushi.png" // Placeholder for logo path
-    },
-    {
-      title: "Vikraya",
-      description: "Blockchain-based crop auction system enabling farmers to sell their produce directly to consumers with full transparency and no scope for fraud. Built with Next.js, Tailwind CSS, Supabase, Web3.js, and Razorpay.",
-      technologies: ["Next.js", "Tailwind CSS", "Supabase", "Web3.js", "Razorpay"],
-      link: "https://vikraya.vercel.app",
-      logo: "/logos/vikraya.png" // Placeholder for logo path
     },
     {
       title: "Infernia (Dragon's Realm)",
