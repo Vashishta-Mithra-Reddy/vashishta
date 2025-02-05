@@ -17,6 +17,13 @@ export default function Projects() {
       logo: "/logos/karyakramah.png" // Placeholder for logo path
     },
     {
+      title: "Doppleganger",
+      description: "Real-time interest-based chat platform where users log in, enter their interests, and get matched with others having similar interests. Features include authentication, real-time database, and WebRTC-based video chat.",
+      technologies: ["Next.js", "Supabase", "WebRTC", "Simple Peer", "Supabase Realtime"],
+      link: "https://xdoppleganger.vercel.app",
+      logo: "/logos/doppleganger.png"
+    },
+    {
       title: "Krushi",
       description: "IoT-based agricultural model for monitoring soil moisture and detecting animals. Utilized Arduino, Node MCU, IoT sensors, Thingspeak, and IFTTT for data handling and message alerts.",
       technologies: ["Arduino", "Node MCU", "IoT Sensors", "Thingspeak", "IFTTT"],
