@@ -43,13 +43,6 @@ export default function Projects() {
       technologies: ["Android Studio", "Kotlin", "Jetpack Compose", "Mobile Sensors"],
       link: "https://kaizen.vercel.app", // Replace with actual link if hosted
       logo: "/logos/kaizen.png" // Placeholder for logo path
-    },
-    {
-      title: "The Food Junction",
-      description: "Minimalist restaurant website using HTML, CSS, and JavaScript.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      link: "https://thefoodjunction.vercel.app",
-      logo: "/logos/thefoodjunction.png" // Placeholder for logo path
     }
   ];
 
