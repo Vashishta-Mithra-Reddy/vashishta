@@ -1,4 +1,6 @@
+"use client"
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Projects() {
   const projects = [
@@ -48,42 +50,117 @@ export default function Projects() {
       title: "Kaizen",
       description: "Android application leveraging mobile sensors to track physical activity. Features include personalized fitness goals, diet tracking, and gamified elements like challenges and user rankings. Built using Kotlin and Jetpack Compose.",
       technologies: ["Android Studio", "Kotlin", "Jetpack Compose", "Mobile Sensors"],
-      link: "https://kaizen.vercel.app", // Replace with actual link if hosted
+      link: "https://www.vashishtamithra.com/", // Replace with actual link if hosted
       logo: "/logos/kaizen.png" // Placeholder for logo path
     }
   ];
+  const [showPreview, setShowPreview] = useState(false);
+  const [previewUrl, setPreviewUrl] = useState("");
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleMouseEnter = (url: string) => {
+    if (url) {
+      setPreviewUrl(url);
+      setShowPreview(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setShowPreview(false);
+  };
 
   return (
     <section id="projects" className="py-20 bg-white">
+      <div 
+        className={`fixed inset-0 bg-black/50 z-[60] transition-all duration-500 ease-in-out ${
+          showPreview ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setShowPreview(false)}
+      />
+      <div
+        className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] h-[80vh] max-w-[1200px] z-[70] 
+          transition-all duration-500 ease-in-out transform ${
+          showPreview ? 'scale-100 opacity-100' : 'scale-90 opacity-0 pointer-events-none'
+        }`}
+      >
+        <button
+          onClick={() => setShowPreview(false)}
+          className={`absolute -top-4 -right-4 bg-white rounded-full p-2 shadow-lg z-[80] hover:bg-gray-100 
+            transition-all duration-500 ease-in-out transform ${
+            showPreview ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
+          }`}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <iframe
+          src={previewUrl}
+          className={`w-full h-full rounded-lg border-2 border-gray-300 shadow-2xl bg-white 
+            transition-all duration-500 ease-in-out transform ${
+            showPreview ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+          }`}
+          title="Project Preview"
+          allowFullScreen
+        />
+      </div>
       <div className="container mx-auto px-4 mt-5 max-w-6xl">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 cursor-pointer">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
               className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="flex items-center mb-6">
-                {project.logo && (
-                  <img
-                    src={project.logo}
-                    alt={`${project.title} logo`}
-                    className="w-16 h-16 mr-4 object-contain"
-                  />
-                )}
-                <h3 className="text-xl font-semibold text-primary text-black">{project.title}</h3>
+              <div className="relative z-10">
+                <div className="flex items-center mb-6">
+                  {project.logo && (
+                    <img
+                      src={project.logo}
+                      alt={`${project.title} logo`}
+                      className="w-16 h-16 mr-4 object-contain"
+                    />
+                  )}
+                  <h3 
+                    className="text-xl font-semibold text-primary text-black cursor-pointer hover:text-blue-600 transition-colors"
+                    onMouseEnter={() => handleMouseEnter(project.link)}
+                  >
+                    {project.title}
+                  </h3>
+                </div>
+                <p className="text-gray-700 mb-2">{project.description}</p>
+                <p className="text-sm text-gray-600 mb-4">
+                  <strong>Technologies:</strong> {project.technologies.join(", ")}
+                </p>
+                <div className="flex justify-between items-center">
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    className="px-4 py-2  hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300"
+                  >
+                    View Project
+                  </Link>
+                  {project.link && (
+                    <button
+                      onClick={() => handleMouseEnter(project.link)}
+                      className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300"
+                    >
+                      Preview Project Here!
+                    </button>
+                  )}
+                </div>
               </div>
-              <p className="text-gray-700 mb-2">{project.description}</p>
-              <p className="text-sm text-gray-600 mb-4">
-                <strong>Technologies:</strong> {project.technologies.join(", ")}
-              </p>
-              <Link
-                href={project.link}
-                target="_blank"
-                className="text-black underline"
-              >
-                View Project
-              </Link>
+              <div className="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white">
+                <iframe
+                  src={project.link}
+                  className="w-full h-full rounded-lg"
+                  title={project.title}
+                />
+              </div>
             </div>
           ))}
         </div>
