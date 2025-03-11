@@ -55,7 +55,7 @@ export default function Projects() {
     }
   ];
   const [showPreview, setShowPreview] = useState(false);
-  const [previewUrl, setPreviewUrl] = useState("");
+  const [previewUrl, setPreviewUrl] = useState("https://www.vashishtamithra.com/");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -89,7 +89,7 @@ export default function Projects() {
       >
         <button
           onClick={() => setShowPreview(false)}
-          className={`absolute -top-4 -right-4 bg-white rounded-full p-2 shadow-lg z-[80] hover:bg-gray-100 
+          className={`absolute -top-4 -right-4 bg-white rounded-full p-2 shadow-lg z-[80] hover:bg-gray-100 text-gray-500 
             transition-all duration-500 ease-in-out transform ${
             showPreview ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
           }`}
