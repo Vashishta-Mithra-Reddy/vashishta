@@ -93,6 +93,13 @@ export default function Projects() {
           <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">Playground</h2>
           <div className="flex flex-col items-center">
             <h3 className="text-xl text-gray-700 mb-6 text-center">Project Moon - Playing around with Three.js</h3>
+            <Link
+              href="https://xmoonx.vercel.app"
+              target="_blank"
+              className="text-black underline mt-4"
+            >
+              View Project Moon
+            </Link>
             <div className="w-full h-[550px] rounded-xl overflow-hidden border-2 border-gray-300 mb-4">
               <iframe 
                 src="https://xmoonx.vercel.app" 
