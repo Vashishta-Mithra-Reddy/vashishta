@@ -4,7 +4,7 @@ export default function Projects() {
   const projects = [
     {
       "title": "Nidhi",
-      "description": "Decentralized fundraising platform empowering student startups/organizations by providing transparent, smart contract-based funding. AI-powered project verification, and a token(NIDHI token) reward system for investors",
+      "description": "Decentralized fundraising platform empowering student startups/organizations by providing transparent, smart contract-based funding. AI-powered project verification, and a token(NIDHI) reward system for investors",
       "technologies": ["Next.js", "Tailwind CSS", "Supabase", "Solidity", "Web3.js","Third Web"],
       "link": "https://project-nidhi.vercel.app",
       "logo": "/logos/nidhi.png" // Placeholder for logo path
