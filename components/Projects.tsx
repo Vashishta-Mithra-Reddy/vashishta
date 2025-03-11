@@ -3,6 +3,13 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
+      "title": "Nidhi",
+      "description": "Decentralized fundraising platform empowering student startups/organizations by providing transparent, smart contract-based funding. AI-powered project verification, and a token(NIDHI token) reward system for investors",
+      "technologies": ["Next.js", "Tailwind CSS", "Supabase", "Solidity", "Web3.js","Third Web"],
+      "link": "https://project-nidhi.vercel.app",
+      "logo": "/logos/nidhi.png" // Placeholder for logo path
+    },
+    {
       title: "Vikraya",
       description: "Blockchain-based crop auction system enabling farmers to sell their produce directly to consumers with full transparency and no scope for fraud. Built with Next.js, Tailwind CSS, Supabase, Web3.js, and Razorpay.",
       technologies: ["Next.js", "Tailwind CSS", "Supabase", "Web3.js", "Razorpay"],
@@ -48,7 +55,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-20 bg-white">
-      <div className="container mx-auto px-4 mt-5 max-w-6xl ">
+      <div className="container mx-auto px-4 mt-5 max-w-6xl">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 cursor-pointer">
           {projects.map((project, index) => (
@@ -79,6 +86,21 @@ export default function Projects() {
               </Link>
             </div>
           ))}
+        </div>
+
+        {/* Playground Section */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">Playground</h2>
+          <div className="flex flex-col items-center">
+            <h3 className="text-xl text-gray-700 mb-6 text-center">Project Moon - Playing around with Three.js</h3>
+            <div className="w-full h-[550px] rounded-xl overflow-hidden border-2 border-gray-300 mb-4">
+              <iframe 
+                src="https://xmoonx.vercel.app" 
+                className="w-full h-full"
+                title="Project Moon"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
