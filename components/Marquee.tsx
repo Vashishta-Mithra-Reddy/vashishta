@@ -44,25 +44,25 @@ export default function Marquee() {
     
     if (hour >= 5 && hour < 12) {
       setTimeGreetings([
-        "Good Morning", "सुप्रभात", "శుभోదయం", "おはようございます", 
+        "Good Morning", "सुप्रभात", "శుభోదయం", "おはようございます", 
         "Bonjour", "Buenos días", "Buongiorno", "좋은 아침", 
         "Bom dia", "Доброе утро", "Guten Morgen"
       ]);
     } else if (hour >= 12 && hour < 17) {
       setTimeGreetings([
-        "Good Afternoon", "शुभ दोपहर", "శుभ మధ్యాహ్నం", "こんにちは", 
+        "Good Afternoon", "शुभ दोपहर", "శుభ మధ్యాహ్నం", "こんにちは", 
         "Bon après-midi", "Buenas tardes", "Buon pomeriggio", "안녕하세요", 
         "Boa tarde", "Добрый день", "Guten Tag"
       ]);
     } else if (hour >= 17 && hour < 21) {
       setTimeGreetings([
-        "Good Evening", "शुभ संध्या", "శుभ సాయంత్రం", "こんばんは", 
+        "Good Evening", "शुभ संध्या", "శుభ సాయంత్రం", "こんばんは", 
         "Bonsoir", "Buenas noches", "Buona serata", "안녕하세요", 
         "Boa noite", "Добрый вечер", "Guten Abend"
       ]);
     } else {
       setTimeGreetings([
-        "Good Night", "शुभ रात्रि", "శుभరాత్రి", "おやすみなさい", 
+        "Good Night", "शुभ रात्रि", "శుభరాత్రి", "おやすみなさい", 
         "Bonne nuit", "Buenas noches", "Buonanotte", "안녕히 주무세요", 
         "Boa noite", "Спокойной ночи", "Gute Nacht"
       ]);
