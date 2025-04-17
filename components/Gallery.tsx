@@ -76,4 +76,3 @@ const Gallery = ({ bucketName }: { bucketName: string }) => {
 };
 
 export default Gallery;
-
