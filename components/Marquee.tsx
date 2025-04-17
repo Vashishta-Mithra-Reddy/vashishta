@@ -24,18 +24,16 @@ export default function Marquee() {
     'pt': ['Olá', 'Bom dia', 'Boa tarde', 'Boa noite', 'Boa noite'],
     'ru': ['Привет', 'Доброе утро', 'Добрый день', 'Добрый вечер', 'Спокойной ночи'],
     'de': ['Hallo', 'Guten Morgen', 'Guten Tag', 'Guten Abend', 'Gute Nacht'],
-  };
-
-  const getHighlightClass = (greeting: string) => {
-    const userLangGreetings = languageMap[userLanguage as keyof typeof languageMap] || languageMap['en'];
-    return userLangGreetings.includes(greeting) 
-      ? 'text-black font-medium' 
-      : 'text-gray-400';
+    'ta': ['வணக்கம்', 'காலை வணக்கம்', 'மதிய வணக்கம்', 'மாலை வணக்கம்', 'இரவு வணக்கம்'],
+    'ml': ['നമസ്കാരം', 'സുപ്രഭാതം', 'ഉച്ച നമസ്കാരം', 'സായാഹ്ന നമസ്കാരം', 'ശുഭ രാത്രി'],
+    'sa': ['नमस्कारः', 'सुप्रभातम्', 'शुभमध्याह्नम्', 'शुभसन्ध्या', 'शुभरात्रिः'],
+    'kn': ['ನಮಸ್ಕಾರ', 'ಶುಭೋದಯ', 'ಶುಭ ಮಧ್ಯಾಹ್ನ', 'ಶುಭ ಸಂಜೆ', 'ಶುಭ ರಾತ್ರಿ']
   };
 
   // Multilingual greetings
   const greetings = [
-    "Hello", "नमस्ते", "నమస్కారం", "こんにちは", "Bonjour", "Hola", 
+    "Hello", "नमस्ते", "నమస్కారం", "வணக்கம்",
+    "നമസ്കാരം", "नमस्कारः", "ನಮಸ್ಕಾರ", "こんにちは", "Bonjour", "Hola", 
     "Ciao", "안녕하세요", "Olá", "Привет", "Hallo"
   ];
 
@@ -44,30 +42,41 @@ export default function Marquee() {
     
     if (hour >= 5 && hour < 12) {
       setTimeGreetings([
-        "Good Morning", "सुप्रभात", "శుభోదయం", "おはようございます", 
+        "Good Morning", "सुप्रभात", "శుభోదయం","காலை வணக்கம்",
+        "സുപ്രഭാതം", "सुप्रभातम्", "ಶುಭೋದಯ", "おはようございます", 
         "Bonjour", "Buenos días", "Buongiorno", "좋은 아침", 
-        "Bom dia", "Доброе утро", "Guten Morgen"
+        "Bom dia", "Доброе утро", "Guten Morgen" 
       ]);
     } else if (hour >= 12 && hour < 17) {
       setTimeGreetings([
-        "Good Afternoon", "शुभ दोपहर", "శుభ మధ్యాహ్నం", "こんにちは", 
+        "Good Afternoon", "शुभ दोपहर", "శుభ మధ్యాహ్నం", "மதிய வணக்கம்",
+        "ഉച്ച നമസ്കാരം", "शुभमध्याह्नम्", "ಶುಭ ಮಧ್ಯಾಹ್ನ", "こんにちは", 
         "Bon après-midi", "Buenas tardes", "Buon pomeriggio", "안녕하세요", 
-        "Boa tarde", "Добрый день", "Guten Tag"
+        "Boa tarde", "Добрый день", "Guten Tag" 
       ]);
     } else if (hour >= 17 && hour < 21) {
       setTimeGreetings([
-        "Good Evening", "शुभ संध्या", "శుభ సాయంత్రం", "こんばんは", 
+        "Good Evening", "शुभ संध्या", "శుభ సాయంత్రం", "மாலை வணக்கம்",
+        "സായാഹ്ന നമസ്കാരം", "शुभसन्ध्या", "ಶುಭ ಸಂಜೆ", "こんばんは", 
         "Bonsoir", "Buenas noches", "Buona serata", "안녕하세요", 
         "Boa noite", "Добрый вечер", "Guten Abend"
       ]);
     } else {
       setTimeGreetings([
-        "Good Night", "शुभ रात्रि", "శుభరాత్రి", "おやすみなさい", 
+        "Good Night", "शुभ रात्रि", "శుభరాత్రి",  "இரவு வணக்கம்",
+        "ശുഭ രാത്രി", "शुभरात्रिः", "ಶುಭ ರಾत್ರಿ", "おやすみなさい", 
         "Bonne nuit", "Buenas noches", "Buonanotte", "안녕히 주무세요", 
         "Boa noite", "Спокойной ночи", "Gute Nacht"
       ]);
     }
   }, []);
+
+  const getHighlightClass = (greeting: string) => {
+    const userLangGreetings = languageMap[userLanguage as keyof typeof languageMap] || languageMap['en'];
+    return userLangGreetings.includes(greeting) 
+      ? 'text-black font-medium' 
+      : 'text-gray-400';
+  };
 
   return (
     <div className="w-full overflow-hidden font-aileron">

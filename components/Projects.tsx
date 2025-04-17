@@ -109,7 +109,7 @@ export default function Projects() {
         />
       </div>
       <div className="container mx-auto px-4 mt-5 max-w-6xl">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">Projects</h2>
+        <h2 className="text-3xl font-semibold text-gray-900 mb-10 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
@@ -126,8 +126,8 @@ export default function Projects() {
                     />
                   )}
                   <h3 
-                    className="text-xl font-semibold text-primary text-black cursor-pointer hover:text-blue-600 transition-colors"
-                    onMouseEnter={() => handleMouseEnter(project.link)}
+                    className="text-xl font-semibold text-primary text-black hover:text-gray-600 transition-colors"
+                    // onMouseEnter={() => handleMouseEnter(project.link)}
                   >
                     {project.title}
                   </h3>

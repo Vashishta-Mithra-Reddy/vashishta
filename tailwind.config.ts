@@ -17,11 +17,11 @@ export default {
       },
       animation: {
         // Right to left animations (default direction)
-        'marquee-rtl': 'marquee-rtl 25s linear infinite',
-        'marquee2-rtl': 'marquee2-rtl 25s linear infinite',
+        'marquee-rtl': 'marquee-rtl 45s linear infinite',
+        'marquee2-rtl': 'marquee2-rtl 45s linear infinite',
         // Left to right animations (reverse direction)
-        'marquee-ltr': 'marquee-ltr 35s linear infinite',
-        'marquee2-ltr': 'marquee2-ltr 35s linear infinite',
+        'marquee-ltr': 'marquee-ltr 50s linear infinite',
+        'marquee2-ltr': 'marquee2-ltr 50s linear infinite',
       },
       keyframes: {
         // Right to left keyframes

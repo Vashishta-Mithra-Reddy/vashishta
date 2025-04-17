@@ -5,6 +5,7 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Education from '../components/Education'
 import Achievements from '../components/Achievements'
+import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 import Marquee from '@/components/Marquee'
 
@@ -17,9 +18,10 @@ export default function Home() {
       <main className="animate-fade-in">
         <About />
         <Skills />
+        <Experience />
         <Projects />
         {/* <Education /> */}
-        <Achievements />
+        {/* <Achievements /> */}
         <Contact />
       </main>
     </div>
