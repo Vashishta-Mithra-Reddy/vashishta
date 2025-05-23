@@ -8,7 +8,7 @@ export default function Experience() {
     {
       title: "Co-founder, Soulmegle",
       company: "Persist Ventures",
-      period: "Mar 2025 – Apr 2025",
+      period: "Mar 2025 – May 2025",
       website: "https://soulmegle.com",
       description: [
         "Built and launched the MVP for Soulmegle, a video chatting platform that matches users based on shared interests and behavior analysis.",

@@ -19,13 +19,6 @@ export default function Projects() {
       logo: "/logos/vikraya.png" // Placeholder for logo path
     },
     {
-      title: "Kāryakramah",
-      description: "SaaS platform enabling event planning with features to book banquet halls and personnel. Built with Next.js, Node.js, Tailwind CSS, Clerk, MongoDB, and Razorpay. Hosted on Vercel.",
-      technologies: ["Next.js", "Node.js", "Tailwind CSS", "Clerk", "MongoDB", "Razorpay"],
-      link: "https://karyakramah.vercel.app",
-      logo: "/logos/karyakramah.png" // Placeholder for logo path
-    },
-    {
       title: "Doppleganger",
       description: "Real-time interest-based chat platform where users log in, enter their interests, and get matched with others having similar interests. Features include authentication, real-time database, and WebRTC-based video chat.",
       technologies: ["Next.js", "Supabase", "WebRTC", "Simple Peer", "Supabase Realtime"],
@@ -52,8 +45,40 @@ export default function Projects() {
       technologies: ["Android Studio", "Kotlin", "Jetpack Compose", "Mobile Sensors"],
       link: "https://www.vashishtamithra.com/", // Replace with actual link if hosted
       logo: "/logos/kaizen.png" // Placeholder for logo path
+    },
+    {
+      title: "The Baga Village",
+      description: "Premium hotel collection website showcasing luxury accommodations in Goa. Features property listings, amenities, and booking information for multiple hotels including Baga Domingo, The Village Manali, and Baga Pescador.",
+      technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
+      link: "https://bagavillage.vercel.app/",
+      logo: "/logos/bagavillage.png" // Placeholder for logo path
     }
   ];
+
+  const ongoingProjects = [
+    {
+      title: "Kāryakramah",
+      description: "SaaS platform enabling event planning with features to book banquet halls and personnel. Built with Next.js, Node.js, Tailwind CSS, Clerk, MongoDB, and Razorpay. Hosted on Vercel.",
+      technologies: ["Next.js", "Node.js", "Tailwind CSS", "Clerk", "MongoDB", "Razorpay"],
+      link: "https://karyakramah.vercel.app",
+      logo: "/logos/karyakramah.png" // Placeholder for logo path
+    },
+    {
+      title: "Kanri | Kāryakramah",
+      description: "Venue management system that serves as the powerful backend for Kāryakramah. Features include venue management, automated availability checking, booking management, and role-based access with admin and owner permissions.",
+      technologies: ["Next.js", "Tailwind CSS", "Role-based Authentication", "Dashboard", "Booking System"],
+      link: "https://kanrixkaryakramah.vercel.app/",
+      logo: "/logos/karyakramah.png" // Placeholder for logo path
+    },
+    {
+      title: "Lost Escapes",
+      description: "Boutique travel experience platform offering curated getaways in breathtaking locations. Features unique experiences, exclusive destinations, sustainable travel options, and top-rated stays with a focus on authentic local experiences.",
+      technologies: ["Next.js", "Tailwind CSS", "Travel Booking", "Content Management", "Responsive Design"],
+      link: "http://lostescapes.com/",
+      logo: "/logos/karyakramah.png" // Placeholder for logo path
+    }
+  ];
+
   const [showPreview, setShowPreview] = useState(false);
   const [previewUrl, setPreviewUrl] = useState("https://www.vashishtamithra.com/");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -109,13 +134,17 @@ export default function Projects() {
         />
       </div>
       <div className="container mx-auto px-4 mt-5 max-w-6xl">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-10 text-center">Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+        {/* Ongoing Projects Section */}
+        <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">Ongoing Projects</h2>
+        <p className="text-gray-600 text-center mb-10">Current projects under active development</p>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-20">
+          {ongoingProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px]"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px] relative overflow-hidden"
             >
+              
               <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center mb-6">
                   {project.logo && (
@@ -127,7 +156,6 @@ export default function Projects() {
                   )}
                   <h3 
                     className="text-xl font-semibold text-primary text-black hover:text-gray-600 transition-colors"
-                    // onMouseEnter={() => handleMouseEnter(project.link)}
                   >
                     {project.title}
                   </h3>
@@ -151,7 +179,58 @@ export default function Projects() {
                       onClick={() => handleMouseEnter(project.link)}
                       className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
                     >
-                      Preview Project Here!
+                      Preview Project
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Completed Projects Section */}
+        <h2 className="text-3xl font-semibold text-gray-900 mb-10 text-center">Completed Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px]"
+            >
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="flex items-center mb-6">
+                  {project.logo && (
+                    <img
+                      src={project.logo}
+                      alt={`${project.title} logo`}
+                      className="w-16 h-16 mr-4 object-contain"
+                    />
+                  )}
+                  <h3 
+                    className="text-xl font-semibold text-primary text-black hover:text-gray-600 transition-colors"
+                  >
+                    {project.title}
+                  </h3>
+                </div>
+                <div className="flex-grow">
+                  <p className="text-gray-700 mb-2 text-justify">{project.description}</p>
+                  <p className="text-sm text-gray-600 mb-4 pt-2">
+                    <strong>Technologies:</strong> {project.technologies.join(", ")}
+                  </p>
+                </div>
+                <div className="flex justify-between items-center gap-4 mt-auto pt-4">
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
+                  >
+                    View Project
+                  </Link>
+                  {project.link && (
+                    <button
+                      onClick={() => handleMouseEnter(project.link)}
+                      className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
+                    >
+                      Preview Project
                     </button>
                   )}
                 </div>
