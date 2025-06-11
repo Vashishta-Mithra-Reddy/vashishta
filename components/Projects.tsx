@@ -51,11 +51,18 @@ export default function Projects() {
       description: "Premium hotel collection website showcasing luxury accommodations in Goa. Features property listings, amenities, and booking information for multiple hotels including Baga Domingo, The Village Manali, and Baga Pescador.",
       technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
       link: "https://bagavillage.vercel.app/",
-      logo: "/logos/bagavillage.png" // Placeholder for logo path
+      logo: "/logos/tbv.png" // Placeholder for logo path
     }
   ];
 
   const ongoingProjects = [
+    {
+      title: "White Waters",
+      description: "SaaS platform enabling event planning with features to book banquet halls and personnel. Built with Next.js, Node.js, Tailwind CSS, Clerk, MongoDB, and Razorpay. Hosted on Vercel.",
+      technologies: ["Next.js", "Supabase", "Tailwind CSS","ES Lint"],
+      link: "https://whitewaters.vercel.app",
+      logo: "/logos/white_waters_v5.png" // Placeholder for logo path
+    },
     {
       title: "Kāryakramah",
       description: "SaaS platform enabling event planning with features to book banquet halls and personnel. Built with Next.js, Node.js, Tailwind CSS, Clerk, MongoDB, and Razorpay. Hosted on Vercel.",
@@ -75,7 +82,7 @@ export default function Projects() {
       description: "Boutique travel experience platform offering curated getaways in breathtaking locations. Features unique experiences, exclusive destinations, sustainable travel options, and top-rated stays with a focus on authentic local experiences.",
       technologies: ["Next.js", "Tailwind CSS", "Travel Booking", "Content Management", "Responsive Design"],
       link: "http://lostescapes.com/",
-      logo: "/logos/karyakramah.png" // Placeholder for logo path
+      logo: "/logos/lostescapes.jpg" // Placeholder for logo path
     }
   ];
 
@@ -142,7 +149,7 @@ export default function Projects() {
           {ongoingProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px] relative overflow-hidden"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 border-dashed transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px] relative overflow-hidden"
             >
               
               <div className="relative z-10 flex flex-col h-full">
@@ -194,7 +201,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px]"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 border-dashed transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px]"
             >
               <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center mb-6">

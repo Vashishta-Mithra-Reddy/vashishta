@@ -80,7 +80,7 @@ export default function Marquee() {
 
   return (
     <div className="w-full overflow-hidden font-aileron">
-      <div className="relative flex overflow-x-hidden bg-white border-y border-gray-200">
+      <div className="relative flex overflow-x-hidden bg-white border-y-2 border-dashed border-gray-200">
         <div className="animate-marquee-rtl whitespace-nowrap py-3">
           {greetings.map((greeting, index) => (
             <span 
@@ -103,7 +103,7 @@ export default function Marquee() {
         </div>
       </div>
       
-      <div className="relative flex overflow-x-hidden bg-gray-50 border-b border-gray-200">
+      <div className="relative flex overflow-x-hidden bg-gray-50 border-b-2 border-dashed border-gray-200">
         <div className="animate-marquee-ltr whitespace-nowrap py-2">
           {timeGreetings.map((greeting, index) => (
             <span 

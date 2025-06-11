@@ -84,7 +84,7 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div 
               key={index} 
-              className="bg-white p-10 rounded-lg border-2 border-gray-300 transition-all duration-300 hover:shadow-lg"
+              className="bg-white p-10 rounded-lg border-dashed border-2 border-gray-300 transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                 <div className="flex items-center">
@@ -122,7 +122,7 @@ export default function Experience() {
                 ))}
               </div>
 
-              <div className="flex justify-between items-center gap-4 mt-6 pt-4 border-t border-gray-200">
+              <div className="flex justify-between items-center gap-4 mt-6 pt-4 border-t-2 border-dashed border-gray-200">
                 <Link
                   href={exp.website}
                   target="_blank"
