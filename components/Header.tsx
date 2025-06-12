@@ -29,10 +29,10 @@ export default function Header() {
 
   return (
     // <header className={`fixed w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 ${isScrolled ? 'bg-white border-b-2 border-gray-300' : 'bg-transparent'} `}>
-    <header className={`fixed max-w-2xl w-full top-0 md:top-6 z-50 transition-all duration-300 px-1 md:px-6 bg-gray-50 border-2 border-dashed backdrop-blur-3xl border-gray-300 rounded-none md:rounded-xl `}>
+    <header className={`fixed max-w-3xl w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 bg-gray-50/50 border-x-2 border-b-2 border-dashed backdrop-blur-3xl border-gray-300 rounded-none md:rounded-b-xl `}>
       <nav className="container mx-auto px-3 py-6">
         <div className="flex justify-end md:justify-center items-center">
-          <div className="hidden md:flex space-x-12">
+          <div className="hidden md:flex space-x-16">
             {navItems.map((item) => (
               <Link 
                 key={item}
