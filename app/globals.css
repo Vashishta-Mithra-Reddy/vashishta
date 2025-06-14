@@ -39,6 +39,23 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes rise {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .animate-rise {
+    animation: rise 0.5s ease-out forwards;
+  }
+}
+
 @font-face {
   font-family: 'AileronBlack';
   src: url('fonts/Aileron-Black.otf') format('opentype');
