@@ -84,7 +84,7 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div 
               key={index} 
-              className="bg-white p-10 rounded-lg border-dashed border-2 border-gray-300 transition-all duration-300"
+              className="bg-white p-10 rounded-lg border border-gray-300 transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                 <div className="flex items-center">

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center  text-white overflow-hidden">
+    <section className="relative h-screen flex items-start pt-52 md:pt-40 justify-start text-white overflow-hidden">
       {/* <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/placeholder.svg?height=1080&width=1920"

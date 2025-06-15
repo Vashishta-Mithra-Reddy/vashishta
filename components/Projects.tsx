@@ -149,7 +149,7 @@ export default function Projects() {
           {ongoingProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 border-dashed transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px] relative overflow-hidden"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px] relative overflow-hidden"
             >
               
               <div className="relative z-10 flex flex-col h-full">
@@ -201,7 +201,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 border-dashed transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px]"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px]"
             >
               <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center mb-6">

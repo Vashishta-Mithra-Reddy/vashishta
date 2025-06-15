@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 export default function Header() {
@@ -29,10 +30,20 @@ export default function Header() {
 
   return (
     // <header className={`fixed w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 ${isScrolled ? 'bg-white border-b-2 border-gray-300' : 'bg-transparent'} `}>
-    <header className={`fixed max-w-3xl w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 bg-gray-50/50 border-x-2 border-b-2 border-dashed backdrop-blur-3xl border-gray-300 rounded-none md:rounded-b-xl `}>
-      <nav className="container mx-auto px-3 py-6">
-        <div className="flex justify-end md:justify-center items-center">
-          <div className="hidden md:flex space-x-16">
+    <header className={`fixed md:relative w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 bg-gray-50/50 border-b-2 border-dashed backdrop-blur-3xl border-gray-300`}>
+      <nav className="container mx-auto px-8 md:px-20 py-4">
+        <div className="flex justify-between items-center">
+        <Link href="/">
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          style={{ objectFit: "cover" }}
+          width={70}
+          height={35}
+          className='animate-pulse'
+        />
+        </Link>
+          {/* <div className="hidden md:flex space-x-16">
             {navItems.map((item) => (
               <Link 
                 key={item}
@@ -43,7 +54,10 @@ export default function Header() {
                 <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
               </Link>
             ))}
-          </div>
+          </div> */}
+          <button className='px-4 py-2 bg-black rounded-xl hidden md:block'>
+            Contact Me
+          </button>
           <button 
             className="md:hidden text-white focus:outline-none" 
             onClick={toggleMenu}

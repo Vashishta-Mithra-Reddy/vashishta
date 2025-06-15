@@ -1,14 +1,14 @@
 export default function Contact() {
   const Languages = ["English","Telugu","Hindi","Japanese(Basic)"]
   return (
-    <section id="contact" className="py-20 bg-white text-black">
-      <div className="container mx-auto px-4 mt-5">
+    <section id="contact" className=" bg-white text-black w-full">
+      <div className="container mx-auto mt-5 pb-4 md:pb-20">
         
         
-        {/* Navigation Section */}
+        {/* Navigation Section
         <div className="text-center mb-10">
           <h3 className="text-xl font-medium mb-4">More About Me?</h3>
-          <div className="flex flex-wrap justify-center items-center gap-6 bg-white py-4 px-6 rounded-lg mx-auto max-w-3xl border-2 border-dashed border-gray-300">
+          <div className="flex flex-wrap justify-center items-center gap-6 bg-white py-4 px-6 rounded-lg mx-auto border-2 border-dashed border-gray-300">
             <a
               href="/music"
               className="text-black hover:text-blue-600 transition-colors duration-300"
@@ -28,7 +28,7 @@ export default function Contact() {
               Gallery
             </a>
           </div>
-        </div>
+        </div> */}
         
         {/* <div className="text-center mb-10">
           <h3 className="text-xl font-medium mb-4">Languages known</h3>
@@ -42,9 +42,9 @@ export default function Contact() {
           </div>
         </div> */}
         
-        <h2 className="text-3xl font-semibold mb-8 text-center">Contact</h2>
         {/* Contact Info Section */}
-        <div className="text-center space-y-6 max-w-5xl mx-auto bg-white p-8 rounded-lg border-2 border-dashed border-gray-300">
+        <div className="text-center space-y-6 mx-auto bg-white p-8 rounded-lg border-t-2 border-dashed border-gray-300">
+          {/* <h2 className="text-3xl font-semibold mb-8 text-center">Contact</h2> */}
           <p className="text-black font-bold">
             Email:{" "}
             <a

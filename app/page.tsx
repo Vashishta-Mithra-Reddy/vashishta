@@ -12,6 +12,7 @@ import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 import Marquee from '@/components/Marquee'
 import Loading from './loading'
+import More from '@/components/More'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,8 +39,9 @@ export default function Home() {
           <Projects />
           {/* <Education /> */}
           {/* <Achievements /> */}
-          <Contact />
+          <More/>
         </main>
+        <Contact />
       </div>
     </>
   )
