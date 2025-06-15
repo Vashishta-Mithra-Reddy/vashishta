@@ -122,17 +122,17 @@ export default function Experience() {
                 ))}
               </div>
 
-              <div className="flex justify-between items-center gap-4 mt-6 pt-4 border-t-2 border-dashed border-gray-200">
+              <div className="flex justify-between items-center gap-4 mt-6 pt-4  border-gray-200">
                 <Link
                   href={exp.website}
                   target="_blank"
-                  className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
+                  className="px-4 py-2 hover:bg-gray-100 rounded-lg text-sm text-gray-900 border-2 border-dashed hover:scale-105 transition-all border-gray-400/80 flex-1 text-center"
                 >
                   View Project
                 </Link>
                 <button
                   onClick={() => handleMouseEnter(exp.website)}
-                  className="px-4 py-2 bg-primary hover:bg-primary/90 rounded-lg transition-colors text-sm text-gray-900 flex-1 border-2 border-gray-300 text-center hover:bg-gray-100"
+                  className="px-4 py-2 bg-primary hover:bg-primary/90 rounded-lg text-sm text-gray-900/90 flex-1 border-2 border-dashed hover:scale-105 transition-all border-gray-300 text-center hover:bg-gray-100"
                 >
                   Preview Project
                 </button>

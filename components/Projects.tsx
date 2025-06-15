@@ -177,14 +177,14 @@ export default function Projects() {
                   <Link
                     href={project.link}
                     target="_blank"
-                    className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
+                    className="px-4 py-2 hover:bg-gray-100 rounded-lg text-sm text-gray-900 border-2 border-dashed hover:scale-105 transition-all border-gray-400/80 flex-1 text-center"
                   >
                     View Project
                   </Link>
                   {project.link && (
                     <button
                       onClick={() => handleMouseEnter(project.link)}
-                      className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
+                      className="px-4 py-2 hover:bg-gray-100 rounded-lg text-sm text-gray-900/90 border-2 border-dashed hover:scale-105 transition-all border-gray-300 flex-1 text-center"
                     >
                       Preview Project
                     </button>
@@ -228,14 +228,14 @@ export default function Projects() {
                   <Link
                     href={project.link}
                     target="_blank"
-                    className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
+                    className="px-4 py-2 hover:bg-gray-100 rounded-lg text-sm text-gray-900 border-2 border-dashed hover:scale-105 transition-all duration-200 border-gray-400/80 flex-1 text-center"
                   >
                     View Project
                   </Link>
                   {project.link && (
                     <button
                       onClick={() => handleMouseEnter(project.link)}
-                      className="px-4 py-2 hover:bg-gray-100 rounded-lg transition-colors text-sm text-gray-900 border-2 border-gray-300 flex-1 text-center"
+                      className="px-4 py-2 hover:bg-gray-100 rounded-lg text-sm text-gray-900/90 border-2 border-dashed hover:scale-105 transition-all duration-200 border-gray-300 flex-1 text-center"
                     >
                       Preview Project
                     </button>
