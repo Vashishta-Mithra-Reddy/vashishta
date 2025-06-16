@@ -43,7 +43,7 @@ export default function Contact() {
         </div> */}
         
         {/* Contact Info Section */}
-        <div className="text-center space-y-6 mx-auto bg-white p-8 rounded-lg border-t-2 border-dashed border-gray-300">
+        <div className="text-center space-y-6 mx-auto bg-white p-8 rounded-lg border-t-2 border-gray-100">
           {/* <h2 className="text-3xl font-semibold mb-8 text-center">Contact</h2> */}
           <p className="text-black font-bold">
             Email:{" "}

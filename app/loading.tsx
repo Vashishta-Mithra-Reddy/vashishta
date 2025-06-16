@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Loading() {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white z-50 transition-alll duration-200 ease-out">
+    <div className="fixed inset-0 flex items-center justify-center bg-white z-50 ">
       <Image
         src="/v_loading.png"
         alt="loading"

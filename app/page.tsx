@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Dock from '../components/Dock'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -20,8 +21,8 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500); // 2.5 seconds loading time
-
+    }, 1500); 
+    
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
@@ -42,6 +43,7 @@ export default function Home() {
           <More/>
         </main>
         <Contact />
+        <Dock />
       </div>
     </>
   )

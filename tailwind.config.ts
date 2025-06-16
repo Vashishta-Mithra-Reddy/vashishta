@@ -13,15 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        aileron: ["AileronBlack", "sans-serif"],
-      },
-      animation: {
-        // Right to left animations (default direction)
-        'marquee-rtl': 'marquee-rtl 45s linear infinite',
-        'marquee2-rtl': 'marquee2-rtl 45s linear infinite',
-        // Left to right animations (reverse direction)
-        'marquee-ltr': 'marquee-ltr 50s linear infinite',
-        'marquee2-ltr': 'marquee2-ltr 50s linear infinite',
+        aileron: ['var(--font-aileron)',],
       },
       keyframes: {
         // Right to left keyframes
@@ -42,8 +34,29 @@ export default {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(100%)' },
         },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'fade-out': {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+        "fade-in-up" :{
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },       
+        }
+      },
+      animation: {
+        'marquee-rtl': 'marquee-rtl 45s linear infinite',
+        'marquee2-rtl': 'marquee2-rtl 45s linear infinite',
+        'marquee-ltr': 'marquee-ltr 50s linear infinite',
+        'marquee2-ltr': 'marquee2-ltr 50s linear infinite',
+        'fade-in': 'fade-in 1s ease-in-out',
+        'fade-out': 'fade-out 1s ease-in-out',
+        'fade-in-up': 'fade-in-up 1s ease-in-out',
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate"),],
 } satisfies Config;

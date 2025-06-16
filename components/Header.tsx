@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     // <header className={`fixed w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 ${isScrolled ? 'bg-white border-b-2 border-gray-300' : 'bg-transparent'} `}>
-    <header className={`fixed md:relative w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 bg-gray-50/50 border-b-2 border-dashed backdrop-blur-3xl border-gray-300`}>
+    <header className={`sticky w-full top-0 z-50 transition-all duration-300 px-1 md:px-6 bg-gray-50/50 border-b-2 border-dashed backdrop-blur-3xl border-gray-300`}>
       <nav className="container mx-auto px-8 md:px-20 py-4">
         <div className="flex justify-between items-center">
         <Link href="/">
@@ -55,9 +55,9 @@ export default function Header() {
               </Link>
             ))}
           </div> */}
-          <button className='px-4 py-2 bg-black rounded-xl hidden md:block'>
+          <Link href="#contact" className='px-4 py-2 bg-black rounded-xl hidden md:block'>
             Contact Me
-          </button>
+          </Link>
           <button 
             className="md:hidden text-white focus:outline-none" 
             onClick={toggleMenu}

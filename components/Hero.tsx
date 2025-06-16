@@ -16,7 +16,7 @@ export default function Hero() {
         <p className="text-2xl md:text-3xl text-gray-500 animate-fade-in-up">
          I am
         </p>
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 font-aileron animate-fade-in-down text-black">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4 font-aileron animate-fade-in-up text-black">
           Vundyala Vashishta Mithra Reddy
         </h1>
         <p className="text-2xl md:text-3xl text-gray-500 animate-fade-in-up">

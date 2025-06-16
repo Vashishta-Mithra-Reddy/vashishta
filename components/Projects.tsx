@@ -5,84 +5,98 @@ import { useState } from "react";
 export default function Projects() {
   const projects = [
     {
-      "title": "Nidhi",
-      "description": "Decentralized fundraising platform empowering student startups/organizations by providing transparent, smart contract-based funding. AI-powered project verification, and a token(NIDHI) reward system for investors",
-      "technologies": ["Next.js", "Tailwind CSS", "Supabase", "Solidity", "Web3.js","Third Web"],
-      "link": "https://project-nidhi.vercel.app",
-      "logo": "/logos/nidhi.png" // Placeholder for logo path
+      title: "Nidhi",
+      description: "Decentralized fundraising platform, smart contract-based funding. AI-powered project verification, and a token(NIDHI) reward system for investors",
+      technologies: ["Next.js", "Tailwind CSS", "Supabase", "Solidity", "Web3.js","Third Web"],
+      link: "https://project-nidhi.vercel.app",
+      logo: "/logos/nidhi.png"
     },
     {
       title: "Vikraya",
-      description: "Blockchain-based crop auction system enabling farmers to sell their produce directly to consumers with full transparency and no scope for fraud. Built with Next.js, Tailwind CSS, Supabase, Web3.js, and Razorpay.",
+      description: "Vikraya is a blockchain-based crop auction system enabling farmers to sell their produce directly to the consumer, without depending on middlemen.",
       technologies: ["Next.js", "Tailwind CSS", "Supabase", "Web3.js", "Razorpay"],
       link: "https://vikraya.vercel.app",
-      logo: "/logos/vikraya.png" // Placeholder for logo path
+      logo: "/logos/vikraya.png"
+    },
+    {
+      title: "The Baga Village",
+      description: "A Website built for a hotel chain.",
+      technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
+      link: "https://bagavillage.vercel.app/",
+      logo: "/logos/tbv.png" 
+    },
+    {
+      title: "Rohtang Apiary",
+      description: "A website built for a humble bee farmer in the Himalayas.",
+      technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
+      link: "https://rohtangapiary.vercel.app/",
+      logo: "/logos/rohtang_apiary.png" 
     },
     {
       title: "Doppleganger",
-      description: "Real-time interest-based chat platform where users log in, enter their interests, and get matched with others having similar interests. Features include authentication, real-time database, and WebRTC-based video chat.",
+      description: "Real-time interest-based chat platform where users log in, enter their interests, and get matched with others having similar interests.",
       technologies: ["Next.js", "Supabase", "WebRTC", "Simple Peer", "Supabase Realtime"],
       link: "https://xdoppleganger.vercel.app",
       logo: "/logos/doppleganger.png"
     },
     {
-      title: "Krushi",
-      description: "IoT-based agricultural model for monitoring soil moisture and detecting animals. Utilized Arduino, Node MCU, IoT sensors, Thingspeak, and IFTTT for data handling and message alerts.",
-      technologies: ["Arduino", "Node MCU", "IoT Sensors", "Thingspeak", "IFTTT"],
-      link: "https://github.com/Vashishta-Mithra-Reddy/Agro_T",
-      logo: "/logos/krushi.png" // Placeholder for logo path
-    },
-    {
       title: "Infernia (Dragon's Realm)",
-      description: "Personal digital vault web app with components like Scroll of Memory (Diary), Quest Log (To-Do List), Dragon's Feast (Diet tracking using Nutritionix API), and Dragon's Archive (document storage). Built using Next.js, ShadCN, and Tailwind CSS.",
+      description: "Personal digital vault web app with components like Diary, To-Do List, Diet tracking using Nutritionix API, and Document storage.",
       technologies: ["Next.js", "ShadCN", "Tailwind CSS", "Nutritionix API"],
       link: "https://infernia.vercel.app",
-      logo: "/logos/infernia.png" // Placeholder for logo path
+      logo: "/logos/infernia.png"
+    },
+    {
+      title: "Krushi",
+      description: "IoT-based agricultural model for monitoring soil moisture and detecting animals. With proper data handling and message alerts.",
+      technologies: ["Arduino", "Node MCU", "IoT Sensors", "Thingspeak", "IFTTT"],
+      link: "https://github.com/Vashishta-Mithra-Reddy/Agro_T",
+      logo: "/logos/krushi.png"
     },
     {
       title: "Kaizen",
-      description: "Android application leveraging mobile sensors to track physical activity. Features include personalized fitness goals, diet tracking, and gamified elements like challenges and user rankings. Built using Kotlin and Jetpack Compose.",
+      description: "Android fitness app, features include personalized fitness goals, diet tracking, and gamified elements like challenges and user rankings.",
       technologies: ["Android Studio", "Kotlin", "Jetpack Compose", "Mobile Sensors"],
       link: "https://www.vashishtamithra.com/", // Replace with actual link if hosted
-      logo: "/logos/kaizen.png" // Placeholder for logo path
-    },
-    {
-      title: "The Baga Village",
-      description: "Premium hotel collection website showcasing luxury accommodations in Goa. Features property listings, amenities, and booking information for multiple hotels including Baga Domingo, The Village Manali, and Baga Pescador.",
-      technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
-      link: "https://bagavillage.vercel.app/",
-      logo: "/logos/tbv.png" // Placeholder for logo path
+      logo: "/logos/kaizen.png"
     }
   ];
 
   const ongoingProjects = [
     {
+      title: "Ishta.",
+      description: "Ishta is a personalized web app where users showcase their identity through favorite songs, movies, social links, and much more.",
+      technologies: ["Next.js", "Supabase", "Tailwind CSS","ES Lint"],
+      link: "https://try-ishta.vercel.app",
+      logo: "/logos/ishta.png" 
+    },
+    {
       title: "White Waters",
-      description: "SaaS platform enabling event planning with features to book banquet halls and personnel. Built with Next.js, Node.js, Tailwind CSS, Clerk, MongoDB, and Razorpay. Hosted on Vercel.",
+      description: "White Waters is a booking platform built for an adventure agency.",
       technologies: ["Next.js", "Supabase", "Tailwind CSS","ES Lint"],
       link: "https://whitewaters.vercel.app",
-      logo: "/logos/white_waters_v5.png" // Placeholder for logo path
+      logo: "/logos/white_waters_v5.png"
     },
     {
       title: "Kāryakramah",
-      description: "SaaS platform enabling event planning with features to book banquet halls and personnel. Built with Next.js, Node.js, Tailwind CSS, Clerk, MongoDB, and Razorpay. Hosted on Vercel.",
+      description: "SaaS platform to check venue and personnel (Service Providers) availabilty and book them.",
       technologies: ["Next.js", "Node.js", "Tailwind CSS", "Clerk", "MongoDB", "Razorpay"],
       link: "https://karyakramah.vercel.app",
-      logo: "/logos/karyakramah.png" // Placeholder for logo path
+      logo: "/logos/karyakramah.png"
     },
     {
       title: "Kanri | Kāryakramah",
-      description: "Venue management system that serves as the powerful backend for Kāryakramah. Features include venue management, automated availability checking, booking management, and role-based access with admin and owner permissions.",
+      description: "Venue management system that serves as the powerful backend for Kāryakramah.",
       technologies: ["Next.js", "Tailwind CSS", "Role-based Authentication", "Dashboard", "Booking System"],
       link: "https://kanrixkaryakramah.vercel.app/",
-      logo: "/logos/karyakramah.png" // Placeholder for logo path
+      logo: "/logos/karyakramah.png" 
     },
     {
       title: "Lost Escapes",
-      description: "Boutique travel experience platform offering curated getaways in breathtaking locations. Features unique experiences, exclusive destinations, sustainable travel options, and top-rated stays with a focus on authentic local experiences.",
+      description: "A web app built for a boutique travel experience agency offering stays, tours, and experiences.",
       technologies: ["Next.js", "Tailwind CSS", "Travel Booking", "Content Management", "Responsive Design"],
       link: "http://lostescapes.com/",
-      logo: "/logos/lostescapes.jpg" // Placeholder for logo path
+      logo: "/logos/lostescapes.jpg" 
     }
   ];
 
@@ -142,14 +156,14 @@ export default function Projects() {
       </div>
       <div className="container mx-auto px-4 mt-5 max-w-6xl">
         {/* Ongoing Projects Section */}
-        <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">Ongoing Projects</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Ongoing Projects</h2>
         <p className="text-gray-600 text-center mb-10">Current projects under active development</p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-20">
           {ongoingProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px] relative overflow-hidden"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[300px] relative overflow-hidden"
             >
               
               <div className="relative z-10 flex flex-col h-full">
@@ -168,12 +182,12 @@ export default function Projects() {
                   </h3>
                 </div>
                 <div className="flex-grow">
-                  <p className="text-gray-700 mb-2 text-justify">{project.description}</p>
-                  <p className="text-sm text-gray-600 mb-4 pt-2">
+                  <p className="text-gray-700">{project.description}</p>
+                  {/* <p className="text-sm text-gray-600 mb-4 pt-2">
                     <strong>Technologies:</strong> {project.technologies.join(", ")}
-                  </p>
+                  </p> */}
                 </div>
-                <div className="flex justify-between items-center gap-4 mt-auto pt-4">
+                <div className="flex justify-between items-center gap-4 mt-auto">
                   <Link
                     href={project.link}
                     target="_blank"
@@ -196,12 +210,13 @@ export default function Projects() {
         </div>
         
         {/* Completed Projects Section */}
-        <h2 className="text-3xl font-semibold text-gray-900 mb-10 text-center">Completed Projects</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Completed Projects</h2>
+        <p className="text-gray-600 text-center mb-10">All The Projects I Have Designed and Developed</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[400px]"
+              className="bg-white px-12 py-10 rounded-lg border-gray-300 border-2 transition-all duration-300 transform hover:-translate-y-1 flex flex-col min-h-[300px]"
             >
               <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center mb-6">
@@ -219,10 +234,10 @@ export default function Projects() {
                   </h3>
                 </div>
                 <div className="flex-grow">
-                  <p className="text-gray-700 mb-2 text-justify">{project.description}</p>
-                  <p className="text-sm text-gray-600 mb-4 pt-2">
+                  <p className="text-gray-700 mb-2">{project.description}</p>
+                  {/* <p className="text-sm text-gray-600 mb-4 pt-2">
                     <strong>Technologies:</strong> {project.technologies.join(", ")}
-                  </p>
+                  </p> */}
                 </div>
                 <div className="flex justify-between items-center gap-4 mt-auto pt-4">
                   <Link
