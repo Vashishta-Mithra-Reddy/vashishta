@@ -95,7 +95,7 @@ export default function Projects() {
       title: "Lost Escapes",
       description: "A web app built for a boutique travel experience agency offering stays, tours, and experiences.",
       technologies: ["Next.js", "Tailwind CSS", "Travel Booking", "Content Management", "Responsive Design"],
-      link: "http://lostescapes.com/",
+      link: "https://lostescapes.com/",
       logo: "/logos/lostescapes.jpg" 
     }
   ];
