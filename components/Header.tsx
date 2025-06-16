@@ -55,7 +55,7 @@ export default function Header() {
               </Link>
             ))}
           </div> */}
-          <Link href="#contact" className='px-4 py-2 bg-black rounded-xl hidden md:block'>
+          <Link href="#contact" className='px-5 py-2 bg-black rounded-xl hidden md:block active:scale-95 transition-all duration-500 font-semibold'>
             Contact Me
           </Link>
           <button 

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -23,12 +24,12 @@ export default function Hero() {
           Web Developer & Freelancer
         </p>
         <div className="flex justify-center space-x-4 animate-fade-in">
-          <a href="#contact" className="bg-primary text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+          <a href="#contact" className="bg-primary text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover:ring-offset-2 hover:ring-4 ring-gray-200 active:scale-90">
             Contact Me
           </a>
-          <a href="#projects" className="bg-white text-gray-900 border-2 border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+          <Link href="#projects" className="bg-white text-gray-900 border-2 border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover:ring-4 ring-offset-2 ring-gray-200 hover:border-double hover:bg-gray-50 hover:border-transparent active:scale-90">
             View Projects
-          </a>
+          </Link>
         </div>
       </div>
     </section>
