@@ -123,7 +123,7 @@ export default function Experience() {
                 ))}
               </div>
 
-              <div className="flex justify-between items-center gap-4 mt-6 pt-4  border-gray-200">
+              {/* <div className="flex justify-between items-center gap-4 mt-6 pt-4  border-gray-200">
                 <Link
                   href={exp.website}
                   target="_blank"
@@ -137,7 +137,7 @@ export default function Experience() {
                 >
                   Preview Project
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
