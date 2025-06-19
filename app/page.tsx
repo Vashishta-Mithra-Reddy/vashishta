@@ -29,7 +29,9 @@ export default function Home() {
   return (
     <>
       {/* {isLoading && <Loading />} */}
-      <div className={`min-h-screen bg-white flex items-center flex-col ${isLoading ? 'hidden' : ''}`}>
+      {/* <div className={`min-h-screen bg-white flex items-center flex-col ${isLoading ? 'hidden' : ''}`}> */}
+      <div className={`min-h-screen bg-white flex items-center flex-col`}>
+
         <Header />
         <Hero />
         <Marquee />
