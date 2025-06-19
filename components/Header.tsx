@@ -38,6 +38,7 @@ export default function Header() {
           src="/logo.png"
           alt="Logo"
           style={{ objectFit: "cover" }}
+          priority
           width={70}
           height={35}
           className='animate-pulse'
