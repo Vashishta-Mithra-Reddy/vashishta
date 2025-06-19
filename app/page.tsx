@@ -16,19 +16,19 @@ import Loading from './loading'
 import More from '@/components/More'
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1500); 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1500); 
     
-    return () => clearTimeout(timer); // Cleanup the timer
-  }, []);
+  //   return () => clearTimeout(timer); // Cleanup the timer
+  // }, []);
 
   return (
     <>
-      {isLoading && <Loading />}
+      {/* {isLoading && <Loading />} */}
       <div className={`min-h-screen bg-white flex items-center flex-col ${isLoading ? 'hidden' : ''}`}>
         <Header />
         <Hero />
