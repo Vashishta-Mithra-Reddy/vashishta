@@ -19,6 +19,13 @@ export default function Projects() {
       logo: "/logos/vikraya.png"
     },
     {
+      title: "Why Kerala?",
+      description: "A Website I developed to convince my friends to join me on a trip to Kerala.",
+      technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
+      link: "https://whykerala.vercel.app/",
+      logo: "/logos/whykerala.png" 
+    },
+    {
       title: "The Baga Village",
       description: "A Website built for a hotel chain.",
       technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
