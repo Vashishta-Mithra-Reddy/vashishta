@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from "next/link";
+import FadeInWhenVisible from './animations/FadeInWhenVisible';
 
 export default function Experience() {
   const experiences = [
@@ -80,7 +81,7 @@ export default function Experience() {
       <div className="container mx-auto px-4 mt-5">
         <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Experience</h2>
         <p className="text-gray-600 text-center mb-10">Where I Worked & What I have Done</p>
-        
+        <FadeInWhenVisible>
         <div className="max-w-4xl mx-auto space-y-6">
           {experiences.map((exp, index) => (
             <div 
@@ -141,6 +142,7 @@ export default function Experience() {
             </div>
           ))}
         </div>
+        </FadeInWhenVisible>
       </div>
     </section>
   );

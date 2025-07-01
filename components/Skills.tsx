@@ -1,5 +1,7 @@
 "use client";
 
+import FadeInWhenVisible from "./animations/FadeInWhenVisible";
+
 export default function Skills() {
   const skills = [
     "Python", "Java", "JavaScript","TypeScript","HTML 5", "CSS", "Tailwind CSS", "Next.js","React.js","Node.js",
@@ -11,6 +13,7 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-4 mt-5">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Skills</h2>
+        <FadeInWhenVisible>
         <div className="flex flex-wrap justify-center items-center gap-4 max-w-3xl mx-auto">
           {skills.map((skill, index) => (
             <span
@@ -21,6 +24,7 @@ export default function Skills() {
             </span>
           ))}
         </div>
+        </FadeInWhenVisible>
       </div>
     </section>
   );

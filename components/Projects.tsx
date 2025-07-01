@@ -5,6 +5,13 @@ import { useState } from "react";
 export default function Projects() {
   const projects = [
     {
+      title: "Lost Escapes",
+      description: "A web app built for a boutique travel experience agency offering stays, tours, and experiences.",
+      technologies: ["Next.js", "Tailwind CSS", "Travel Booking", "Content Management", "Responsive Design"],
+      link: "https://lostescapes.com/",
+      logo: "/logos/lostescapes.jpg" 
+    },
+    {
       title: "Nidhi",
       description: "Decentralized fundraising platform, smart contract-based funding. AI-powered project verification, and a token(NIDHI) reward system for investors",
       technologies: ["Next.js", "Tailwind CSS", "Supabase", "Solidity", "Web3.js","Third Web"],
@@ -97,13 +104,6 @@ export default function Projects() {
       technologies: ["Next.js", "Tailwind CSS", "Role-based Authentication", "Dashboard", "Booking System"],
       link: "https://kanrixkaryakramah.vercel.app/",
       logo: "/logos/karyakramah.png" 
-    },
-    {
-      title: "Lost Escapes",
-      description: "A web app built for a boutique travel experience agency offering stays, tours, and experiences.",
-      technologies: ["Next.js", "Tailwind CSS", "Travel Booking", "Content Management", "Responsive Design"],
-      link: "https://lostescapes.com/",
-      logo: "/logos/lostescapes.jpg" 
     }
   ];
 
@@ -287,13 +287,13 @@ export default function Projects() {
             >
               View Project Moon
             </Link>
-            <div className="w-full h-[550px] rounded-xl overflow-hidden border-2 border-gray-300 mb-4">
+            {/* <div className="w-full h-[550px] rounded-xl overflow-hidden border-2 border-gray-300 mb-4">
               <iframe 
                 src="https://xmoonx.vercel.app" 
                 className="w-full h-full"
                 title="Project Moon"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

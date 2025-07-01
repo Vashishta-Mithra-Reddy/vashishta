@@ -2,7 +2,7 @@ export default function Contact() {
   const Languages = ["English","Telugu","Hindi","Japanese(Basic)"]
   return (
     <section id="contact" className=" bg-white text-black w-full">
-      <div className="container mx-auto mt-5 pb-4 md:pb-20">
+      <div className="container mx-auto mt-5 pb-4 md:pb-28">
         
         
         {/* Navigation Section
