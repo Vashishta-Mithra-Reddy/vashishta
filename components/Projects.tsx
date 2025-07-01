@@ -104,6 +104,13 @@ export default function Projects() {
       technologies: ["Next.js", "Tailwind CSS", "Role-based Authentication", "Dashboard", "Booking System"],
       link: "https://kanrixkaryakramah.vercel.app/",
       logo: "/logos/karyakramah.png" 
+    },
+    {
+      title: "V19",
+      description: "V19 is a more modern and artistic version of my portfolio (PS just started building it.)",
+      technologies: ["Next.js", "Supabase", "Tailwind CSS","ES Lint"],
+      link: "https://www.v19.tech/",
+      logo: "/logos/nidhi.png" 
     }
   ];
 
