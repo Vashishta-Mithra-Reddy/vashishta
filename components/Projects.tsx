@@ -78,10 +78,17 @@ export default function Projects() {
 
   const ongoingProjects = [
     {
+      title: "Hita",
+      description: "A wellness platform showcasing personally tested and researched products, remedies, and techniques to support a healthier lifestyle.",
+      technologies: ["Next.js", "Supabase", "Tailwind CSS","ES Lint"],
+      link: "https://hita.v19.tech",
+      logo: "/logos/ishta.png" 
+    },
+    {
       title: "Ishta.",
       description: "Ishta is a personalized web app where users showcase their identity through favorite songs, movies, social links, and much more.",
       technologies: ["Next.js", "Supabase", "Tailwind CSS","ES Lint"],
-      link: "https://try-ishta.vercel.app",
+      link: "https://ishta.v19.tech",
       logo: "/logos/ishta.png" 
     },
     {
