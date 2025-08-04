@@ -43,7 +43,7 @@ export default function Projects() {
       title: "Rohtang Apiary",
       description: "A website built for a humble bee farmer in the Himalayas.",
       technologies: ["Next.js", "Tailwind CSS", "Responsive Design", "Hotel Booking"],
-      link: "https://rohtangapiary.vercel.app/",
+      link: "https://www.rohtangapiary.com/",
       logo: "/logos/rohtang_apiary.png" 
     },
     {
