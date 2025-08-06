@@ -193,7 +193,7 @@ export default function Projects() {
                     <img
                       src={project.logo}
                       alt={`${project.title} logo`}
-                      className="w-16 h-16 mr-4 object-contain"
+                      className="w-16 h-16 mr-4 object-contain bg-gray-100 p-1.5 rounded-xl"
                     />
                   )}
                   <h3 
@@ -245,7 +245,7 @@ export default function Projects() {
                     <img
                       src={project.logo}
                       alt={`${project.title} logo`}
-                      className="w-16 h-16 mr-4 object-contain"
+                      className="w-16 h-16 mr-4 object-contain bg-gray-100 p-2 rounded-xl"
                     />
                   )}
                   <h3 
