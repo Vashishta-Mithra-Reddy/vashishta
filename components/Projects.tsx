@@ -82,7 +82,7 @@ export default function Projects() {
       description: "A wellness platform showcasing personally tested and researched products, remedies, and techniques to support a healthier lifestyle.",
       technologies: ["Next.js", "Supabase", "Tailwind CSS","ES Lint"],
       link: "https://hita.v19.tech",
-      logo: "/logos/ishta.png" 
+      logo: "/logos/hita.png" 
     },
     {
       title: "Ishta.",
