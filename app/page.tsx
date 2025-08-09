@@ -14,6 +14,7 @@ import Contact from '../components/Contact'
 import Marquee from '@/components/Marquee'
 import Loading from './loading'
 import More from '@/components/More'
+import TerminalResume from '@/components/TerminalResume'
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,7 @@ export default function Home() {
           <Skills />
           <Experience />
           <Projects />
+          <TerminalResume />
           {/* <Education /> */}
           {/* <Achievements /> */}
           {/* <More/> */}
