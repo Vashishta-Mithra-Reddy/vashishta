@@ -21,7 +21,7 @@ export default function TerminalResume() {
     <div className="w-full max-w-md mx-auto my-12 px-4">
       {/* <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Terminal Resume</h2>
       <p className="text-gray-600 text-center mb-8">Run this command in your terminal to view my resume</p> */}
-      
+
       <div className="relative bg-gray-900 rounded-lg overflow-hidden shadow-xl border-2 border-gray-300">
         {/* Terminal Header */}
         <div className="bg-gray-800 px-4 py-2 flex items-center">
@@ -30,16 +30,16 @@ export default function TerminalResume() {
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
           </div>
-          <div className="text-gray-400 text-sm mx-auto">terminal</div>
+          {/* <div className="text-gray-400 text-sm mx-auto">terminal</div> */}
         </div>
-        
+
         {/* Terminal Content */}
         <div className="p-4 font-mono">
           <div className="flex items-start">
             <span className="text-green-400 mr-2">$</span>
             <span className="text-white">{command}</span>
             <div className="ml-2 flex-grow flex justify-end">
-              <button 
+              <button
                 onClick={handleCopy}
                 className="text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none"
                 aria-label="Copy to clipboard"
@@ -57,7 +57,7 @@ export default function TerminalResume() {
               </button>
             </div>
           </div>
-          
+
           {/* Terminal Output Animation */}
           {/* <motion.div 
             initial={{ opacity: 0, height: 0 }}
@@ -71,9 +71,9 @@ export default function TerminalResume() {
           </motion.div> */}
         </div>
       </div>
-      
+
       {/* Copy Notification */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: copied ? 1 : 0, y: copied ? 0 : 10 }}
         className="mt-4 text-center text-green-600 font-medium"
