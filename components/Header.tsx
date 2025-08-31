@@ -56,9 +56,14 @@ export default function Header() {
               </Link>
             ))}
           </div> */}
+          <div className='flex gap-2'>
           <Link href="#contact" className='px-5 py-2 bg-black rounded-xl hidden md:block active:scale-95 transition-all duration-500 font-semibold'>
             Contact Me
           </Link>
+          <Link href="/resume" className='px-5 py-2 bg-black rounded-xl hidden md:block active:scale-95 transition-all duration-500 font-semibold'>
+            Resume
+          </Link>
+          </div>
           <button 
             className="md:hidden text-white focus:outline-none" 
             onClick={toggleMenu}
@@ -91,6 +96,15 @@ export default function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+                <Link 
+                  href={"/resume"} 
+                  className="block text-black text-lg font-semibold tracking-wide hover:text-primary transition-colors duration-300 text-end"
+                  onClick={closeMenu}
+                >
+                  Resume
+                </Link>
+              </li>
           </ul>
         </nav>
       </div>
