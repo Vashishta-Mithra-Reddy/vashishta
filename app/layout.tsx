@@ -4,7 +4,10 @@ import './globals.css'
 import { Poppins } from 'next/font/google' 
 import localfont from "next/font/local";
 
-import Dock from "@/components/Dock";
+// import Dock from "@/components/Dock";
+
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] }) 
 
