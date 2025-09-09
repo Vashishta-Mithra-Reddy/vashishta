@@ -4,6 +4,7 @@ import './globals.css'
 import { Poppins } from 'next/font/google' 
 import localfont from "next/font/local";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next"
 
 // import Dock from "@/components/Dock";
 
@@ -51,6 +52,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {children}
+        <Analytics/>
       </body>
     </html>
   )
